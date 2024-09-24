@@ -1,0 +1,8 @@
+import autograd.numpy as np
+
+def f(x):
+    return x**2
+
+x = 1.0
+derivative = np.grad(f)(x)
+print(f"The exact value of the derivative at x = {x} is: {derivative:.6f}")
