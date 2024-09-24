@@ -1,0 +1,15 @@
+import numpy as np
+
+def f(x):
+    """Define the function to differentiate"""
+    return x**2  # Example: f(x) = x2
+
+def finite_difference_derivative(f, x, h=1e-5):
+    """Calculate the derivative using the finite difference method"""
+    return (f(x + h) - f(x - h)) / (2 * h)
+
+x = 1.0  # Example: differentiate at x = 1
+
+derivative = finite_difference_derivative(f, x)
+
+print(f"The approximate value of the derivative at x = {x} is: {derivative:.6f}")
