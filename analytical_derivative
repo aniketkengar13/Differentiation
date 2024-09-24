@@ -1,0 +1,6 @@
+def analytical_derivative(x):
+    return 2*x
+
+x = 1.0
+derivative = analytical_derivative(x)
+print(f"The exact value of the derivative at x = {x} is: {derivative:.6f}")
