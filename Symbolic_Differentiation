@@ -1,0 +1,6 @@
+import sympy as sp
+
+x = sp.symbols('x')
+f = x**2
+derivative = sp.diff(f, x)
+print(f"The exact value of the derivative at x = 1 is: {derivative.subs(x, 1):.6f}")
