@@ -1,0 +1,6 @@
+def complex_step_derivative(f, x, h=1e-5):
+    return np.imag(f(x + h*1j)) / h
+
+x = 1.0
+derivative = complex_step_derivative(f, x)
+print(f"The approximate value of the derivative at x = {x} is: {derivative:.6f}")
